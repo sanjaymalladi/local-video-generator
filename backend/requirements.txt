@@ -7,7 +7,6 @@ manim
 # AI and TTS dependencies
 google-generativeai
 pyttsx3>=2.90
-TTS>=0.22.0
 manim-voiceover[coqui]
 # Video and animation dependencies
 moviepy
