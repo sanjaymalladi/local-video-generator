@@ -47,7 +47,7 @@ function HomeContent() {
   // Real-time job status polling
   useEffect(() => {
     let pollInterval: NodeJS.Timeout;
-    
+
     if (jobId && jobStatus === 'processing') {
       pollInterval = setInterval(async () => {
         try {
@@ -57,15 +57,15 @@ function HomeContent() {
             setProgress(status.progress);
             setCurrentStep(status.currentStep);
             setEstimatedTime(status.estimatedTime);
-            
+
             if (status.status === 'completed') {
               setJobStatus('completed');
               setProgress(100);
               refreshHistory(); // Refresh history when job completes
-              
+
               // Show success toast
               toast.success("Video generation completed!", {
-                description: "Your video is ready to watch and download",
+                description: "Your video has been generated with Manim + Coqui TTS",
                 duration: 5000,
               });
 
@@ -73,16 +73,16 @@ function HomeContent() {
               setTimeout(() => {
                 const videoSection = document.querySelector('[data-video-player]');
                 if (videoSection) {
-                  videoSection.scrollIntoView({ 
-                    behavior: 'smooth', 
-                    block: 'center' 
+                  videoSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
                   });
                 }
               }, 1000);
             } else if (status.status === 'failed') {
               setJobStatus('failed');
               setError(status.error || 'Video generation failed');
-              
+
               // Show error toast
               toast.error("Video generation failed", {
                 description: status.error || 'An error occurred during video generation',
@@ -224,8 +224,8 @@ function HomeContent() {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-in fade-in slide-in-from-top-6 duration-1000 delay-200">
-              Powered by AI, our platform converts your ideas into engaging animated explanations 
-              using advanced script generation and Manim animations.
+              Powered by AI, our platform converts your ideas into engaging animated explanations
+              using Gemini AI, Manim mathematical animations, and Coqui TTS voice synthesis.
             </p>
           </div>
           
@@ -352,9 +352,9 @@ function HomeContent() {
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-500/20 to-purple-600/20 rounded-xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
                   <span className="text-3xl">🎬</span>
                 </div>
-                <h3 className="font-semibold text-lg">Manim Animations</h3>
+                <h3 className="font-semibold text-lg">Manim + TTS</h3>
                 <p className="text-sm text-muted-foreground">
-                  Professional mathematical and educational animations using Manim
+                  Professional mathematical animations with Coqui TTS voice synthesis
                 </p>
               </CardContent>
             </Card>

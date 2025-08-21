@@ -50,7 +50,50 @@ export function VideoPlayer({
   const [hasError, setHasError] = React.useState(false)
   const [volume, setVolume] = React.useState(1)
 
-  const videoSrc = `/api/video/${jobId}`
+  const [videoSrc, setVideoSrc] = React.useState(`/api/video/${jobId}`)
+  const [isMp4, setIsMp4] = React.useState(false)
+
+  // Determine whether the source is MP4 (internal file route) or SVG fallback
+  React.useEffect(() => {
+    let cancelled = false
+    const detect = async () => {
+      try {
+        const res = await fetch(`/api/video/${jobId}?metadata=true`)
+        if (!res.ok) return
+        const meta = await res.json()
+        const url: string | undefined = meta?.videoUrl
+        if (!cancelled && typeof url === 'string') {
+          console.log(`[VideoPlayer] Video metadata for ${jobId}:`, meta)
+          console.log(`[VideoPlayer] Setting video URL: ${url}`)
+
+          // If it's a backend URL (starts with http), use it directly
+          if (url.startsWith('http')) {
+            setVideoSrc(url)
+            setIsMp4(true)
+          } else if (url.startsWith('/')) {
+            // Handle relative URLs
+            setVideoSrc(url)
+            setIsMp4(url.startsWith('/api/video-file/'))
+          } else {
+            // Fallback to direct API call
+            setVideoSrc(`/api/video/${jobId}`)
+            setIsMp4(false)
+          }
+        } else {
+          console.log(`[VideoPlayer] No video URL found in metadata for ${jobId}`)
+        }
+      } catch (error) {
+        console.error('Failed to fetch video metadata:', error)
+        // Fallback: try to construct backend URL directly
+        const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:8000'
+        const backendJobId = jobId.startsWith('job_') ? jobId.replace('job_', '').split('_')[0] : jobId
+        setVideoSrc(`${backendUrl}/videos/${backendJobId}`)
+        setIsMp4(true)
+      }
+    }
+    detect()
+    return () => { cancelled = true }
+  }, [jobId])
 
   // Handle play/pause
   const togglePlay = React.useCallback(() => {
@@ -209,7 +252,7 @@ export function VideoPlayer({
           <div className="flex items-center gap-2">
             <Badge variant="secondary">
               <FileVideo className="w-3 h-3 mr-1" />
-              MP4
+              Animated Video
             </Badge>
             {onDownload && (
               <Button
@@ -227,15 +270,41 @@ export function VideoPlayer({
       </CardHeader>
 
       <CardContent className="space-y-4">
-        {/* Video Player */}
+        {/* Animated Educational Video */}
         <div className="relative bg-black rounded-lg overflow-hidden group">
-          <video
-            ref={videoRef}
-            src={videoSrc}
-            className="w-full aspect-video object-contain"
-            preload="metadata"
-            playsInline
-          />
+          {isMp4 ? (
+            <video
+              ref={videoRef}
+              src={videoSrc}
+              className="w-full aspect-video"
+              controls
+              onLoadedData={() => {
+                console.log(`[VideoPlayer] Video loaded successfully: ${videoSrc}`)
+                setIsLoading(false)
+              }}
+              onError={(e) => {
+                console.error(`[VideoPlayer] Video error for ${videoSrc}:`, e)
+                setHasError(true)
+              }}
+              onCanPlay={() => console.log(`[VideoPlayer] Video can play: ${videoSrc}`)}
+              onCanPlayThrough={() => console.log(`[VideoPlayer] Video can play through: ${videoSrc}`)}
+            />
+          ) : (
+            <iframe
+              src={videoSrc}
+              className="w-full aspect-video border-0"
+              title="Animated Educational Video"
+              onLoad={() => {
+                console.log(`[VideoPlayer] Iframe loaded: ${videoSrc}`)
+                setIsLoading(false)
+              }}
+              onError={() => {
+                console.error(`[VideoPlayer] Iframe error: ${videoSrc}`)
+                setHasError(true)
+              }}
+              allow="autoplay"
+            />
+          )}
 
           {/* Loading Overlay */}
           {isLoading && (
@@ -244,73 +313,17 @@ export function VideoPlayer({
             </div>
           )}
 
-          {/* Controls Overlay */}
+          {/* Video Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-            <div className="absolute bottom-0 left-0 right-0 p-4 space-y-2">
-              {/* Progress Bar */}
-              <div className="flex items-center gap-2 text-white text-sm">
-                <span>{formatDuration(currentTime)}</span>
-                <div 
-                  className="flex-1 h-1 bg-white/30 rounded-full cursor-pointer"
-                  onClick={(e) => {
-                    const rect = e.currentTarget.getBoundingClientRect()
-                    const percent = (e.clientX - rect.left) / rect.width
-                    handleSeek(percent * videoDuration)
-                  }}
-                >
-                  <div 
-                    className="h-full bg-white rounded-full transition-all duration-150"
-                    style={{ width: `${(currentTime / videoDuration) * 100}%` }}
-                  />
-                </div>
-                <span>{formatDuration(videoDuration)}</span>
-              </div>
-
-              {/* Control Buttons */}
+            <div className="absolute bottom-0 left-0 right-0 p-4">
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={togglePlay}
-                    className="text-white hover:bg-white/20 h-8 w-8 p-0"
-                  >
-                    {isPlaying ? (
-                      <Pause className="h-4 w-4" />
-                    ) : (
-                      <Play className="h-4 w-4" />
-                    )}
-                  </Button>
-
-                  <div className="flex items-center gap-1">
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={toggleMute}
-                      className="text-white hover:bg-white/20 h-8 w-8 p-0"
-                    >
-                      {isMuted ? (
-                        <VolumeX className="h-4 w-4" />
-                      ) : (
-                        <Volume2 className="h-4 w-4" />
-                      )}
-                    </Button>
-                    <input
-                      type="range"
-                      min="0"
-                      max="1"
-                      step="0.1"
-                      value={volume}
-                      onChange={(e) => handleVolumeChange(parseFloat(e.target.value))}
-                      className="w-16 h-1 bg-white/30 rounded-full appearance-none cursor-pointer"
-                    />
-                  </div>
+                <div className="text-white text-sm">
+                  🎬 Animated Educational Video - AI Generated
                 </div>
-
-                <Button
+                 <Button
                   variant="ghost"
                   size="sm"
-                  onClick={toggleFullscreen}
+                   onClick={() => window.open(isMp4 ? `/api/video/${jobId}` : videoSrc, '_blank')}
                   className="text-white hover:bg-white/20 h-8 w-8 p-0"
                 >
                   <Maximize className="h-4 w-4" />

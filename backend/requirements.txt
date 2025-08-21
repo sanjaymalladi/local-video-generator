@@ -1,0 +1,29 @@
+# Core FastAPI and async dependencies
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+manim
+# AI and TTS dependencies
+google-generativeai
+pyttsx3>=2.90
+TTS>=0.22.0
+manim-voiceover[coqui]
+# Video and animation dependencies
+moviepy
+ffmpeg-python
+
+# Image and computer vision
+pillow
+numpy
+
+# Utility dependencies
+python-dotenv
+aiofiles
+requests
+
+# Additional dependencies for compatibility
+typing-extensions
+click
+rich
+

@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
+    "dev:turbo": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "setup-env": "node setup-env.js",
+    "setup": "node setup.js",
     "deploy": "vercel --prod"
   },
   "dependencies": {

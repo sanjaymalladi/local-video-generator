@@ -19,31 +19,33 @@ export async function GET(
 
     // Get job from memory
     const job = jobs.get(jobId)
+    console.log(`[Status Endpoint] Looking for job ${jobId}`)
+    console.log(`[Status Endpoint] Available jobs:`, Array.from(jobs.keys()))
+    console.log(`[Status Endpoint] Job found:`, !!job)
 
     if (!job) {
       return NextResponse.json({
         success: false,
-        error: 'Job not found'
+        error: `Job not found. Available jobs: ${Array.from(jobs.keys()).join(', ')}`
       }, { status: 404 })
     }
 
+    // Flatten response to match frontend expectations
     return NextResponse.json({
       success: true,
-      job: {
-        id: job.id,
-        query: job.query,
-        status: job.status,
-        progress: job.progress,
-        currentStep: job.currentStep,
-        videoUrl: job.videoUrl,
-        videoId: job.videoId,
-        fileSize: job.fileSize,
-        duration: job.duration,
-        resolution: job.resolution,
-        error: job.error,
-        createdAt: job.createdAt,
-        completedAt: job.completedAt,
-      }
+      id: job.id,
+      query: job.query,
+      status: job.status,
+      progress: job.progress,
+      currentStep: job.currentStep,
+      videoUrl: job.videoUrl,
+      videoId: job.videoId,
+      fileSize: job.fileSize,
+      duration: job.duration,
+      resolution: job.resolution,
+      error: job.error,
+      createdAt: job.createdAt,
+      completedAt: job.completedAt,
     })
 
   } catch (error) {

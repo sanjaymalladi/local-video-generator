@@ -1,0 +1,1 @@
+{"video_id":"e26d90f1-3e54-48ce-9631-19f0bf33d362","status":"processing","message":"Video generation started. Check status using the video ID."}

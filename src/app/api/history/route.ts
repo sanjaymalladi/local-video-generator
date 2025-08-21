@@ -6,16 +6,19 @@ import { videos } from '../generate/route'
 export async function GET(request: NextRequest): Promise<NextResponse> {
   try {
     const { searchParams } = new URL(request.url)
-    const limit = parseInt(searchParams.get('limit') || '20')
+    const limit = Math.max(1, parseInt(searchParams.get('limit') || '20'))
+    const page = Math.max(1, parseInt(searchParams.get('page') || '1'))
 
     // Get videos from memory
-    const videoArray = Array.from(videos.values())
-      .sort((a, b) => b.createdAt - a.createdAt)
-      .slice(0, limit)
+    const all = Array.from(videos.values()).sort((a, b) => b.createdAt - a.createdAt)
+    const total = all.length
+    const start = (page - 1) * limit
+    const end = start + limit
+    const pageItems = all.slice(start, end)
 
     return NextResponse.json({
       success: true,
-      videos: videoArray.map(video => ({
+      videos: pageItems.map(video => ({
         id: video.jobId,
         title: video.title,
         query: video.query,
@@ -28,7 +31,10 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
         views: video.views,
         downloads: video.downloads,
       })),
-      hasMore: videoArray.length === limit
+      page,
+      limit,
+      total,
+      hasMore: end < total
     })
 
   } catch (error) {

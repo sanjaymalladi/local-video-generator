@@ -18,10 +18,14 @@ export async function GET(
 
     // Get job from memory
     const job = jobs.get(jobId)
+    console.log(`[Video Endpoint] Looking for job ${jobId}`)
+    console.log(`[Video Endpoint] Available jobs:`, Array.from(jobs.keys()))
+    console.log(`[Video Endpoint] Job found:`, !!job)
+    
     if (!job) {
       return NextResponse.json({
         success: false,
-        error: 'Job not found'
+        error: `Job not found. Available jobs: ${Array.from(jobs.keys()).join(', ')}`
       }, { status: 404 })
     }
 
@@ -80,6 +84,11 @@ export async function GET(
     } else if (video.videoUrl.startsWith('http')) {
       // For external URLs, redirect to the video
       return NextResponse.redirect(video.videoUrl)
+    } else if (video.videoUrl.startsWith('/')) {
+      // Internal API path (e.g., /api/video-file/[jobId]) - create absolute URL
+      const baseUrl = new URL(request.url).origin
+      const absoluteUrl = new URL(video.videoUrl, baseUrl).toString()
+      return NextResponse.redirect(absoluteUrl)
     } else {
       // For relative URLs, return error (shouldn't happen with current setup)
       return NextResponse.json({

@@ -1,0 +1,236 @@
+[
+  {
+    "input_text": "Hey everyone, and welcome! Ever heard of LLMs? Sounds a bit like a secret code, right? Well, it stands for Large Language Model, and these clever bits of tech are powering some pretty amazing AI applications these days, from chatbots to creative writing tools. We're going to break down exactly what they are, how they work, and why they're such a big deal. Buckle up!",
+    "input_data": {
+      "input_text": "Hey everyone, and welcome! Ever heard of LLMs? Sounds a bit like a secret code, right? Well, it stands for Large Language Model, and these clever bits of tech are powering some pretty amazing AI applications these days, from chatbots to creative writing tools. We're going to break down exactly what they are, how they work, and why they're such a big deal. Buckle up!",
+      "service": "coqui"
+    },
+    "original_audio": "hey-everyone-and-welcome-ever-heard-of-llms-sounds-e1172a11.mp3",
+    "final_audio": "hey-everyone-and-welcome-ever-heard-of-llms-sounds-e1172a11.mp3"
+  },
+  {
+    "input_text": "Hey everyone, and welcome! Ever heard of LLMs? Sounds a bit like a secret code, right? Well, it stands for Large Language Model, and these clever bits of tech are powering some pretty amazing AI applications these days, from chatbots to creative writing tools. We're going to break down exactly what they are, how they work, and why they're such a big deal. Buckle up!",
+    "input_data": {
+      "input_text": "Hey everyone, and welcome! Ever heard of LLMs? Sounds a bit like a secret code, right? Well, it stands for Large Language Model, and these clever bits of tech are powering some pretty amazing AI applications these days, from chatbots to creative writing tools. We're going to break down exactly what they are, how they work, and why they're such a big deal. Buckle up!",
+      "service": "coqui"
+    },
+    "original_audio": "hey-everyone-and-welcome-ever-heard-of-llms-sounds-e1172a11.mp3",
+    "final_audio": "hey-everyone-and-welcome-ever-heard-of-llms-sounds-e1172a11.mp3"
+  },
+  {
+    "input_text": "So, what *is* a Large Language Model? Simply put, it's a type of artificial intelligence that can understand, generate, and even translate human language. Think of it like a super-smart parrot that's read millions of books, websites, and articles. But instead of just mimicking, it learns patterns and relationships within the text, allowing it to create new and original content.",
+    "input_data": {
+      "input_text": "So, what *is* a Large Language Model? Simply put, it's a type of artificial intelligence that can understand, generate, and even translate human language. Think of it like a super-smart parrot that's read millions of books, websites, and articles. But instead of just mimicking, it learns patterns and relationships within the text, allowing it to create new and original content.",
+      "service": "coqui"
+    },
+    "original_audio": "so-what-is-a-large-language-model-simply-put-it-s-827f32b0.mp3",
+    "final_audio": "so-what-is-a-large-language-model-simply-put-it-s-827f32b0.mp3"
+  },
+  {
+    "input_text": "Ever wondered how your phone can predict what you're going to type, or how a chatbot can answer your questions in complete sentences? The secret lies in something called a Large Language Model, or LLM. But what exactly *is* an LLM? In this video, we'll break it down and see why these AI word wizards are changing the world.",
+    "input_data": {
+      "input_text": "Ever wondered how your phone can predict what you're going to type, or how a chatbot can answer your questions in complete sentences? The secret lies in something called a Large Language Model, or LLM. But what exactly *is* an LLM? In this video, we'll break it down and see why these AI word wizards are changing the world.",
+      "service": "coqui"
+    },
+    "original_audio": "ever-wondered-how-your-phone-can-predict-what-you-9cfe3eb9.mp3",
+    "final_audio": "ever-wondered-how-your-phone-can-predict-what-you-9cfe3eb9.mp3"
+  },
+  {
+    "input_text": "Hey everyone, ever heard someone casually mention LLMs and felt completely lost? Don't worry, you're not alone! LLMs, or Large Language Models, are the buzz of the AI world right now. They're powering everything from chatbots to writing assistants, and in this video, we'll break down exactly what they are in simple terms.",
+    "input_data": {
+      "input_text": "Hey everyone, ever heard someone casually mention LLMs and felt completely lost? Don't worry, you're not alone! LLMs, or Large Language Models, are the buzz of the AI world right now. They're powering everything from chatbots to writing assistants, and in this video, we'll break down exactly what they are in simple terms.",
+      "service": "coqui"
+    },
+    "original_audio": "hey-everyone-ever-heard-someone-casually-mention-99d94a4b.mp3",
+    "final_audio": "hey-everyone-ever-heard-someone-casually-mention-99d94a4b.mp3"
+  },
+  {
+    "input_text": "Hey everyone, ever heard someone casually mention LLMs and felt completely lost? Don't worry, you're not alone! LLMs, or Large Language Models, are the buzz of the AI world right now. They're powering everything from chatbots to writing assistants, and in this video, we'll break down exactly what they are in simple terms.",
+    "input_data": {
+      "input_text": "Hey everyone, ever heard someone casually mention LLMs and felt completely lost? Don't worry, you're not alone! LLMs, or Large Language Models, are the buzz of the AI world right now. They're powering everything from chatbots to writing assistants, and in this video, we'll break down exactly what they are in simple terms.",
+      "service": "coqui"
+    },
+    "original_audio": "hey-everyone-ever-heard-someone-casually-mention-99d94a4b.mp3",
+    "final_audio": "hey-everyone-ever-heard-someone-casually-mention-99d94a4b.mp3"
+  },
+  {
+    "input_text": "At their core, LLMs are super-smart computer programs trained on enormous amounts of text data \u2013 think the entire internet, books, articles, code\u2026 you name it! They learn to recognize patterns and relationships between words, allowing them to predict what word comes next in a sentence, or even generate entire paragraphs of text.",
+    "input_data": {
+      "input_text": "At their core, LLMs are super-smart computer programs trained on enormous amounts of text data \u2013 think the entire internet, books, articles, code\u2026 you name it! They learn to recognize patterns and relationships between words, allowing them to predict what word comes next in a sentence, or even generate entire paragraphs of text.",
+      "service": "coqui"
+    },
+    "original_audio": "at-their-core-llms-are-super-smart-computer-2d48b229.mp3",
+    "final_audio": "at-their-core-llms-are-super-smart-computer-2d48b229.mp3"
+  },
+  {
+    "input_text": "Imagine teaching a dog tricks by giving it treats every time it does something right. LLMs learn in a similar way, but instead of treats, they're constantly refining their understanding of language based on the massive amount of data they've been fed. When you give them a prompt, they use this knowledge to generate a response that *statistically* makes sense. They're essentially predicting the most likely sequence of words to follow your input.",
+    "input_data": {
+      "input_text": "Imagine teaching a dog tricks by giving it treats every time it does something right. LLMs learn in a similar way, but instead of treats, they're constantly refining their understanding of language based on the massive amount of data they've been fed. When you give them a prompt, they use this knowledge to generate a response that *statistically* makes sense. They're essentially predicting the most likely sequence of words to follow your input.",
+      "service": "coqui"
+    },
+    "original_audio": "imagine-teaching-a-dog-tricks-by-giving-it-treats-c23f2aae.mp3",
+    "final_audio": "imagine-teaching-a-dog-tricks-by-giving-it-treats-c23f2aae.mp3"
+  },
+  {
+    "input_text": "So, what can LLMs actually *do*? Well, quite a lot! They can write emails, answer your questions, translate languages, generate computer code, and even create stories. They're powerful tools for automating tasks and generating content, but it's important to remember they're based on patterns, not true understanding.",
+    "input_data": {
+      "input_text": "So, what can LLMs actually *do*? Well, quite a lot! They can write emails, answer your questions, translate languages, generate computer code, and even create stories. They're powerful tools for automating tasks and generating content, but it's important to remember they're based on patterns, not true understanding.",
+      "service": "coqui"
+    },
+    "original_audio": "so-what-can-llms-actually-do-well-quite-a-lot-they-79a9e74b.mp3",
+    "final_audio": "so-what-can-llms-actually-do-well-quite-a-lot-they-79a9e74b.mp3"
+  },
+  {
+    "input_text": "Now, LLMs aren't perfect. They can sometimes generate incorrect information, called hallucinations, or reflect biases present in the data they were trained on. This raises important ethical considerations about responsible development and usage. It's crucial to treat them as tools that require human oversight and critical thinking.",
+    "input_data": {
+      "input_text": "Now, LLMs aren't perfect. They can sometimes generate incorrect information, called hallucinations, or reflect biases present in the data they were trained on. This raises important ethical considerations about responsible development and usage. It's crucial to treat them as tools that require human oversight and critical thinking.",
+      "service": "coqui"
+    },
+    "original_audio": "now-llms-aren-t-perfect-they-can-sometimes-3e53313e.mp3",
+    "final_audio": "now-llms-aren-t-perfect-they-can-sometimes-3e53313e.mp3"
+  },
+  {
+    "input_text": "Despite these challenges, LLMs are rapidly evolving. We can expect to see them integrated into even more aspects of our lives, from personalized learning experiences to assisting doctors with diagnoses. The potential is truly transformative.",
+    "input_data": {
+      "input_text": "Despite these challenges, LLMs are rapidly evolving. We can expect to see them integrated into even more aspects of our lives, from personalized learning experiences to assisting doctors with diagnoses. The potential is truly transformative.",
+      "service": "coqui"
+    },
+    "original_audio": "despite-these-challenges-llms-are-rapidly-evolving-c47a0ed6.mp3",
+    "final_audio": "despite-these-challenges-llms-are-rapidly-evolving-c47a0ed6.mp3"
+  },
+  {
+    "input_text": "So, there you have it \u2013 a quick and easy explanation of Large Language Models. They're powerful tools with the potential to change the world, but it's important to understand their capabilities and limitations. Thanks for watching!",
+    "input_data": {
+      "input_text": "So, there you have it \u2013 a quick and easy explanation of Large Language Models. They're powerful tools with the potential to change the world, but it's important to understand their capabilities and limitations. Thanks for watching!",
+      "service": "coqui"
+    },
+    "original_audio": "so-there-you-have-it-a-quick-and-easy-explanation-8461b2a7.mp3",
+    "final_audio": "so-there-you-have-it-a-quick-and-easy-explanation-8461b2a7.mp3"
+  },
+  {
+    "input_text": "Hey everyone, and welcome! Imagine trying to solve a puzzle with a million pieces. A regular computer tackles it one piece at a time, meticulously checking each connection. This works, but for really HUGE puzzles \u2013 like designing new drugs or cracking complex codes \u2013 it can take\u2026 well, forever! These are problems classical computers just can't handle efficiently.",
+    "input_data": {
+      "input_text": "Hey everyone, and welcome! Imagine trying to solve a puzzle with a million pieces. A regular computer tackles it one piece at a time, meticulously checking each connection. This works, but for really HUGE puzzles \u2013 like designing new drugs or cracking complex codes \u2013 it can take\u2026 well, forever! These are problems classical computers just can't handle efficiently.",
+      "service": "coqui"
+    },
+    "original_audio": "hey-everyone-and-welcome-imagine-trying-to-solve-a-e5b9f4b5.mp3",
+    "final_audio": "hey-everyone-and-welcome-imagine-trying-to-solve-a-e5b9f4b5.mp3"
+  },
+  {
+    "input_text": "That's where quantum computers come in. Instead of using bits that are either a 0 or a 1, like regular computers, they use *qubits*. Think of a regular bit as a light switch that's either on *or* off. A qubit, on the other hand, is like a dimmer switch that can be on, off, *or* somewhere in between, thanks to a mind-bending concept called *superposition*.",
+    "input_data": {
+      "input_text": "That's where quantum computers come in. Instead of using bits that are either a 0 or a 1, like regular computers, they use *qubits*. Think of a regular bit as a light switch that's either on *or* off. A qubit, on the other hand, is like a dimmer switch that can be on, off, *or* somewhere in between, thanks to a mind-bending concept called *superposition*.",
+      "service": "coqui"
+    },
+    "original_audio": "that-s-where-quantum-computers-come-in-instead-of-64bbf1ba.mp3",
+    "final_audio": "that-s-where-quantum-computers-come-in-instead-of-64bbf1ba.mp3"
+  },
+  {
+    "input_text": "Superposition allows a qubit to represent multiple possibilities *simultaneously*. But the real magic happens with *entanglement*. Imagine two of our dimmer switches linked together. When you change the setting on one, the other instantly changes too, *no matter how far apart they are!* Entanglement allows qubits to work together, exploring countless possibilities at the same time.",
+    "input_data": {
+      "input_text": "Superposition allows a qubit to represent multiple possibilities *simultaneously*. But the real magic happens with *entanglement*. Imagine two of our dimmer switches linked together. When you change the setting on one, the other instantly changes too, *no matter how far apart they are!* Entanglement allows qubits to work together, exploring countless possibilities at the same time.",
+      "service": "coqui"
+    },
+    "original_audio": "superposition-allows-a-qubit-to-represent-multiple-f42ce3d2.mp3",
+    "final_audio": "superposition-allows-a-qubit-to-represent-multiple-f42ce3d2.mp3"
+  },
+  {
+    "input_text": "Because qubits can exist in multiple states and are interconnected, quantum computers can explore a vast number of solutions simultaneously. Think of our puzzle again. Instead of trying one piece at a time, a quantum computer explores *all* the pieces and their potential connections *at once*, finding the solution much, much faster.",
+    "input_data": {
+      "input_text": "Because qubits can exist in multiple states and are interconnected, quantum computers can explore a vast number of solutions simultaneously. Think of our puzzle again. Instead of trying one piece at a time, a quantum computer explores *all* the pieces and their potential connections *at once*, finding the solution much, much faster.",
+      "service": "coqui"
+    },
+    "original_audio": "because-qubits-can-exist-in-multiple-states-and-836d2e76.mp3",
+    "final_audio": "because-qubits-can-exist-in-multiple-states-and-836d2e76.mp3"
+  },
+  {
+    "input_text": "This ability opens doors to incredible possibilities! Quantum computers could revolutionize medicine by designing new drugs and therapies. They could optimize logistics and supply chains, creating more efficient systems. They could even break current encryption methods, leading to new ways to secure our data.",
+    "input_data": {
+      "input_text": "This ability opens doors to incredible possibilities! Quantum computers could revolutionize medicine by designing new drugs and therapies. They could optimize logistics and supply chains, creating more efficient systems. They could even break current encryption methods, leading to new ways to secure our data.",
+      "service": "coqui"
+    },
+    "original_audio": "this-ability-opens-doors-to-incredible-1f21440c.mp3",
+    "final_audio": "this-ability-opens-doors-to-incredible-1f21440c.mp3"
+  },
+  {
+    "input_text": "Now, quantum computers aren't perfect. They are extremely sensitive and prone to errors. Building and maintaining them is incredibly complex and expensive. We're still in the early stages of development, but the potential impact of quantum computing is enormous.",
+    "input_data": {
+      "input_text": "Now, quantum computers aren't perfect. They are extremely sensitive and prone to errors. Building and maintaining them is incredibly complex and expensive. We're still in the early stages of development, but the potential impact of quantum computing is enormous.",
+      "service": "coqui"
+    },
+    "original_audio": "now-quantum-computers-aren-t-perfect-they-are-33b7fa10.mp3",
+    "final_audio": "now-quantum-computers-aren-t-perfect-they-are-33b7fa10.mp3"
+  },
+  {
+    "input_text": "Quantum computers represent a fundamental shift in how we process information. They won't replace our laptops or phones anytime soon, but they promise to solve some of the world's most challenging problems. They are truly an amazing innovation of our time!",
+    "input_data": {
+      "input_text": "Quantum computers represent a fundamental shift in how we process information. They won't replace our laptops or phones anytime soon, but they promise to solve some of the world's most challenging problems. They are truly an amazing innovation of our time!",
+      "service": "coqui"
+    },
+    "original_audio": "quantum-computers-represent-a-fundamental-shift-in-9490693a.mp3",
+    "final_audio": "quantum-computers-represent-a-fundamental-shift-in-9490693a.mp3"
+  },
+  {
+    "input_text": "Thanks for watching! If you liked this video, give it a thumbs up and subscribe for more mind-blowing science explanations. What are your thoughts on quantum computing? Let us know in the comments below!",
+    "input_data": {
+      "input_text": "Thanks for watching! If you liked this video, give it a thumbs up and subscribe for more mind-blowing science explanations. What are your thoughts on quantum computing? Let us know in the comments below!",
+      "service": "coqui"
+    },
+    "original_audio": "thanks-for-watching-if-you-liked-this-video-give-3d365208.mp3",
+    "final_audio": "thanks-for-watching-if-you-liked-this-video-give-3d365208.mp3"
+  },
+  {
+    "input_text": "Ever heard the term LLM thrown around and wondered what it actually means? Don't worry, you're not alone! In the next two minutes, we'll break down Large Language Models in a way that's easy to understand. Let's dive in!",
+    "input_data": {
+      "input_text": "Ever heard the term LLM thrown around and wondered what it actually means? Don't worry, you're not alone! In the next two minutes, we'll break down Large Language Models in a way that's easy to understand. Let's dive in!",
+      "service": "coqui"
+    },
+    "original_audio": "ever-heard-the-term-llm-thrown-around-and-wondered-fa5aef1a.mp3",
+    "final_audio": "ever-heard-the-term-llm-thrown-around-and-wondered-fa5aef1a.mp3"
+  },
+  {
+    "input_text": "At their core, LLMs are powerful Artificial Intelligence systems. Think of them as really, really smart computers that have been trained on massive amounts of text data from the internet \u2013 books, articles, websites, you name it! This training allows them to understand and generate human-like text. They learn patterns, relationships between words, and even different writing styles.",
+    "input_data": {
+      "input_text": "At their core, LLMs are powerful Artificial Intelligence systems. Think of them as really, really smart computers that have been trained on massive amounts of text data from the internet \u2013 books, articles, websites, you name it! This training allows them to understand and generate human-like text. They learn patterns, relationships between words, and even different writing styles.",
+      "service": "coqui"
+    },
+    "original_audio": "at-their-core-llms-are-powerful-artificial-31dbee63.mp3",
+    "final_audio": "at-their-core-llms-are-powerful-artificial-31dbee63.mp3"
+  },
+  {
+    "input_text": "So how do they actually work? LLMs use something called neural networks. Imagine a complex web of interconnected nodes. When you give an LLM a prompt, like a question or a sentence, it analyzes the words, predicts the next word based on its training, and then the next, and the next. This prediction continues until it forms a coherent and relevant response. It's all about probability and learning from vast datasets.",
+    "input_data": {
+      "input_text": "So how do they actually work? LLMs use something called neural networks. Imagine a complex web of interconnected nodes. When you give an LLM a prompt, like a question or a sentence, it analyzes the words, predicts the next word based on its training, and then the next, and the next. This prediction continues until it forms a coherent and relevant response. It's all about probability and learning from vast datasets.",
+      "service": "coqui"
+    },
+    "original_audio": "so-how-do-they-actually-work-llms-use-something-6080f69e.mp3",
+    "final_audio": "so-how-do-they-actually-work-llms-use-something-6080f69e.mp3"
+  },
+  {
+    "input_text": "The amazing thing is what these LLMs can do. They can generate text, translate languages, write different kinds of creative content, and answer your questions in an informative way. You've probably already interacted with them through chatbots, writing assistants, or even code generation tools. They're becoming increasingly integrated into our digital lives!",
+    "input_data": {
+      "input_text": "The amazing thing is what these LLMs can do. They can generate text, translate languages, write different kinds of creative content, and answer your questions in an informative way. You've probably already interacted with them through chatbots, writing assistants, or even code generation tools. They're becoming increasingly integrated into our digital lives!",
+      "service": "coqui"
+    },
+    "original_audio": "the-amazing-thing-is-what-these-llms-can-do-they-01018d38.mp3",
+    "final_audio": "the-amazing-thing-is-what-these-llms-can-do-they-01018d38.mp3"
+  },
+  {
+    "input_text": "It's important to remember that LLMs aren't perfect. They can sometimes generate inaccurate or biased information. They don't truly understand the world, they just predict word sequences. Always double-check information and be aware of their limitations. They are tools, and like any tool, they need to be used responsibly.",
+    "input_data": {
+      "input_text": "It's important to remember that LLMs aren't perfect. They can sometimes generate inaccurate or biased information. They don't truly understand the world, they just predict word sequences. Always double-check information and be aware of their limitations. They are tools, and like any tool, they need to be used responsibly.",
+      "service": "coqui"
+    },
+    "original_audio": "it-s-important-to-remember-that-llms-aren-t-8e212e95.mp3",
+    "final_audio": "it-s-important-to-remember-that-llms-aren-t-8e212e95.mp3"
+  },
+  {
+    "input_text": "And that's LLMs in a nutshell! Powerful tools with incredible potential, but also with limitations to be aware of. Hopefully, this short video has demystified Large Language Models for you. Thanks for watching!",
+    "input_data": {
+      "input_text": "And that's LLMs in a nutshell! Powerful tools with incredible potential, but also with limitations to be aware of. Hopefully, this short video has demystified Large Language Models for you. Thanks for watching!",
+      "service": "coqui"
+    },
+    "original_audio": "and-that-s-llms-in-a-nutshell-powerful-tools-with-66e34e0a.mp3",
+    "final_audio": "and-that-s-llms-in-a-nutshell-powerful-tools-with-66e34e0a.mp3"
+  }
+]

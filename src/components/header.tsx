@@ -6,7 +6,7 @@ export function Header() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-            Local Video Generator
+            Video Generator
           </h1>
         </div>
         <div className="flex items-center space-x-4">
